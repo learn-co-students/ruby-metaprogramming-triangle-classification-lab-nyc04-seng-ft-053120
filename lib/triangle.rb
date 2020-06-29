@@ -21,10 +21,6 @@ class Triangle
     side1 != side2 && side1 != side3 && side2 != side3
   end
 
-  def valid_triangle
-    (side1 > 0 || side2 > 0 || side3 > 0) && (side1 + side2 > side3 && side2 + side3 > side1 && side3 + side1 > side2)
-  end
-
   def kind
     if valid_triangle == false
       raise TriangleError
@@ -38,6 +34,10 @@ class Triangle
         :scalene
       end
     end
+  end
+
+  def valid_triangle
+    (side1.positive? || side2.positive? || side3.positive?) && (side1 + side2 > side3 && side2 + side3 > side1 && side3 + side1 > side2)
   end
 
   class TriangleError < StandardError
