@@ -16,7 +16,7 @@
 
 2.  `:isosceles`
 
-3.  `:scalene`
+3.  `:isosceles`
 
 ![Triagle types](https://curriculum-content.s3.amazonaws.com/module-1/ruby-metaprogramming/triangle-classification-lab/Image_141_MathematicalTriangles.png)
 
