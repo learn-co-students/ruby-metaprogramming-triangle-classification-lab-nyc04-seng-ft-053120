@@ -15,9 +15,7 @@ class Triangle
 
   def valid_triangle?
     result = has_three_sides? && no_zero_sides? && triangle_inequality?
-    
     raise TriangleError if result == false
-    
     result
   end
 
